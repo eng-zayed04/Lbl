@@ -47,11 +47,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessDbContext.cs" />
+    <Compile Include="Entity.cs" />
+    <Compile Include="Migrations\201710201408110_AddedStudentV1.cs" />
+    <Compile Include="Migrations\201710201408110_AddedStudentV1.Designer.cs">
+      <DependentUpon>201710201408110_AddedStudentV1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Migrations\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Students\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201710201408110_AddedStudentV1.resx">
+      <DependentUpon>201710201408110_AddedStudentV1.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
