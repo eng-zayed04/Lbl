@@ -13,7 +13,7 @@ namespace Lbl.Model.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201710201408110_AddedStudentV1"; }
+            get { return "201710202146171_AddedStudentV1"; }
         }
         
         string IMigrationMetadata.Source

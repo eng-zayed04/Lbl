@@ -12,7 +12,7 @@ namespace Lbl.Model.Migrations
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(BusinessDbContext context)
+        protected override void Seed(Lbl.Model.BusinessDbContext context)
         {
             //  This method will be called after migrating to the latest version.
 

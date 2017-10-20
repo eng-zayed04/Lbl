@@ -300,6 +300,24 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lbl.Model\Lbl.Model.csproj">
+      <Project>{1359bbbe-2626-4243-bff2-e7a1f9e71ac6}</Project>
+      <Name>Lbl.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lbl.RequestModel\Lbl.RequestModel.csproj">
+      <Project>{27689f05-8ecd-4152-8e6c-4427deb1d74c}</Project>
+      <Name>Lbl.RequestModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lbl.Service\Lbl.Service.csproj">
+      <Project>{40ef91c5-0b00-4c3e-93a6-3554e485869b}</Project>
+      <Name>Lbl.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lbl.ViewModel\Lbl.ViewModel.csproj">
+      <Project>{606e97d5-4658-435a-a76a-b10abf40af12}</Project>
+      <Name>Lbl.ViewModel</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

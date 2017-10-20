@@ -45,7 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Lbl.Model\Lbl.Model.csproj">
-      <Project>{fe5cc659-fc18-4f48-80cb-e2c912756b6e}</Project>
+      <Project>{1359bbbe-2626-4243-bff2-e7a1f9e71ac6}</Project>
       <Name>Lbl.Model</Name>
     </ProjectReference>
     <ProjectReference Include="..\Lbl.Repository\Lbl.Repository.csproj">
