@@ -14,7 +14,7 @@ namespace Lbl.Server.Controllers
         public IHttpActionResult Post(Student student)
         {
             StudentService service = new StudentService();
-            bool add = service.Add(student);
+            var add = service.Add(student);
             return this.Ok(add);
         }
     }

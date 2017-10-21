@@ -9,9 +9,10 @@ namespace Lbl.Repository
 {
     public class StudentRepository
     {
-        public bool Add(Student student)
+        public string Add(Student student)
         {
-            return true;
+            student.Id = Guid.NewGuid().ToString();
+            return student.Id;
         }
     }
 }
