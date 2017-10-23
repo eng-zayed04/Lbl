@@ -24,5 +24,10 @@ namespace Lbl.Repository
             int saveChanges = this.db.SaveChanges();
             return saveChanges > 0;
         }
+
+        public IQueryable<Student> Get()
+        {
+            return this.db.Students.AsQueryable();
+        }
     }
 }
