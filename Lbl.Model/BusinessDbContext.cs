@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Lbl.Model.Students;
+using Lbl.Model.Teachers;
 
 namespace Lbl.Model
 {
@@ -16,5 +17,6 @@ namespace Lbl.Model
         }
 
         public DbSet<Student> Students { get; set; }
+        public DbSet<Teacher> Teachers { get; set; }
     }
 }
