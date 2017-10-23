@@ -3,16 +3,26 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Lbl.Model;
 using Lbl.Model.Students;
 
 namespace Lbl.Repository
 {
     public class StudentRepository
     {
-        public string Add(Student student)
+        private BusinessDbContext db;
+
+        public StudentRepository()
+        {
+            this.db = new BusinessDbContext();
+        }
+
+        public bool Add(Student student)
         {
             student.Id = Guid.NewGuid().ToString();
-            return student.Id;
+            this.db.Students.Add(student);
+            int saveChanges = this.db.SaveChanges();
+            return saveChanges > 0;
         }
     }
 }

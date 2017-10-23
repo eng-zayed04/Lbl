@@ -10,7 +10,7 @@ namespace Lbl.Service
 {
     public class StudentService
     {
-        public string Add(Student student)
+        public bool Add(Student student)
         {
             StudentRepository repository = new StudentRepository();
             return repository.Add(student);
